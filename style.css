@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --primary-color: rgb(42, 179, 177);
+  --secondary-color: rgb(192, 223, 51);
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.heading {
+  padding: 28px 24px;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+
+.guarantee {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 14px;
+  color: rgb(154, 167, 190);
+  line-height: 1.857;
+}
+
+.grid-content {
+  color: #fff;
+  /* padding: 24px; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.subscription-box {
+  background-color: var(--primary-color);
+  padding: 24px;
+  padding-top: 24px;
+}
+.subscription-title {
+  padding-bottom: 18px;
+}
+.subscription-cost {
+  font-size: 32px;
+  padding-bottom: 4px;
+}
+
+.subscription-cost span {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+button {
+  margin-top: 26px;
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.more-section {
+  padding: 24px;
+  background-color: rgba(42, 179, 177, 0.85);
+  color: #fff;
+  /* padding: 24px; */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 24px;
+}
+
+.more-section-title {
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 0;
+  color: white;
+}
+
+@media (min-width: 400px) {
+  .heading {
+    padding: 40px;
+  }
+  .description {
+    line-height: 1.625;
+  }
+  .grid-content {
+    display: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .more-section {
+    padding: 40px;
+  }
+  .subscription-box {
+    padding-top: 0;
+    padding: 40px;
+  }
+}
